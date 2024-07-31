@@ -2,7 +2,7 @@
 
 
 // Gecerli kapı sayısı
-Car car = new Car ("BMW", 5.20, "White", 4);
+Car car = new Car("BMW", 5.20, "White", 4);
 car.PrintCarDetails();
 
 

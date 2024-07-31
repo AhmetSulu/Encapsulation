@@ -10,10 +10,9 @@ namespace Encapsulation
 {
     public class Car
     {
-        public string _brand;
-        public double _model;
-        public string _color;
-
+        private string _brand;
+        private double _model;
+        private string _color;
         private int _doorCount; // Kapsüllenmiş özellik
 
         public string Brand
@@ -35,7 +34,7 @@ namespace Encapsulation
         }
 
         // Kapı Sayısı özelliği için özel get ve set
-        public int DoorCount 
+        public int DoorCount
         {
             get { return _doorCount; }
             set
@@ -52,7 +51,7 @@ namespace Encapsulation
             }
         }
         // Yapıcı metot (Constructor)
-        public Car (string brand, double model, string color, int _doorCount)
+        public Car(string brand, double model, string color, int _doorCount)
         {
             _brand = brand;
             _model = model;
