@@ -33,11 +33,11 @@ namespace Encapsulation
             }
         }
         // Yapıcı metot (Constructor)
-        public Car (string brand, double model, string colour, int _doorCount)
+        public Car (string brand, double model, string color, int _doorCount)
         {
             Brand = brand;
             Model = model;
-            Color = colour;
+            Color = color;
             DoorCount = _doorCount; // Kapsülleme işlemini kontrol eder
         }
 
