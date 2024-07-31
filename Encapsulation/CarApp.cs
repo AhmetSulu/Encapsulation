@@ -11,7 +11,7 @@ namespace Encapsulation
     {
         public string Brand { get; set; } // Herhangi bir veri doğrulama gerekmediği için boş bırakılıyor.
         public double Model { get; set; }
-        public string Colour { get; set; }
+        public string Color { get; set; }
 
         private int _doorCount; // Kapsüllenmiş özellik
 
@@ -37,14 +37,14 @@ namespace Encapsulation
         {
             Brand = brand;
             Model = model;
-            Colour = colour;
+            Color = colour;
             DoorCount = _doorCount; // Kapsülleme işlemini kontrol eder
         }
 
         // Bilgileri yazdıran Metot
         public void ArabaBilgileriniYazdır()
         {
-            Console.WriteLine($"Marka: {Brand}, Model: {Model}, Renk: {Colour}, Kapı Sayısı: {DoorCount}");
+            Console.WriteLine($"Marka: {Brand}, Model: {Model}, Renk: {Color}, Kapı Sayısı: {DoorCount}");
         }
     }
 
