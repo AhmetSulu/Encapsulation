@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -9,11 +10,29 @@ namespace Encapsulation
 {
     public class Car
     {
-        public string Brand { get; set; } // Herhangi bir veri doğrulama gerekmediği için boş bırakılıyor.
-        public double Model { get; set; }
-        public string Color { get; set; }
+        public string _brand;
+        public double _model;
+        public string _color;
 
         private int _doorCount; // Kapsüllenmiş özellik
+
+        public string Brand
+        {
+            get { return _brand; }
+            set { _brand = value; }
+        }
+
+        public double Model
+        {
+            get { return _model; }
+            set { _model = value; }
+        }
+
+        public string Color
+        {
+            get { return _color; }
+            set { _color = value; }
+        }
 
         // Kapı Sayısı özelliği için özel get ve set
         public int DoorCount 
@@ -35,9 +54,9 @@ namespace Encapsulation
         // Yapıcı metot (Constructor)
         public Car (string brand, double model, string color, int _doorCount)
         {
-            Brand = brand;
-            Model = model;
-            Color = color;
+            _brand = brand;
+            _model = model;
+            _color = color;
             DoorCount = _doorCount; // Kapsülleme işlemini kontrol eder
         }
 
