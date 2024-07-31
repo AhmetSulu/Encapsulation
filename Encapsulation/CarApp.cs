@@ -42,9 +42,9 @@ namespace Encapsulation
         }
 
         // Bilgileri yazdıran Metot
-        public void ArabaBilgileriniYazdır()
+        public void PrintCarDetails()
         {
-            Console.WriteLine($"Marka: {Brand}, Model: {Model}, Renk: {Color}, Kapı Sayısı: {DoorCount}");
+            Console.WriteLine($"Brand: {Brand}, Model: {Model}, Color: {Color}, Door Count: {DoorCount}");
         }
     }
 
